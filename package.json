@@ -1,0 +1,38 @@
+{
+  "name": "voyager-dev-challenge",
+  "version": "1.0.0",
+  "description": "Solve the Mars Rover problem",
+  "author": "Dimi Antoni",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.6",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-syntax-bigint": "^7.8.3",
+    "@babel/preset-env": "^7.9.6",
+    "@types/jest": "^25.2.1",
+    "@types/node": "^13.13.4",
+    "babel-eslint": "^10.1.0",
+    "babel-jest": "^25.5.1",
+    "eslint": "^6.8.0",
+    "eslint-plugin-import": "^2.20.2",
+    "jest": "^28.1.3",
+    "shelljs": "^0.8.4"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "package.json"
+    ]
+  },
+  "scripts": {
+    "dev": "nodemon index.js",
+    "test": "jest --coverage --no-cache ./__tests__/*",
+    "watch": "jest --no-cache --watch ./*",
+    "lint": "eslint .",
+    "lint-test": "eslint . && jest --no-cache ./* "
+  },
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
